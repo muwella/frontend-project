@@ -47,6 +47,9 @@ main {
   padding-top: 6rem;
 }
 
+.div-form div {
+}
+
 .div-form {
   background-color: rgba(242, 230, 255, 0.3);
   display: flex;
@@ -58,7 +61,7 @@ main {
   min-height: 10rem;
   height: 28rem;
 
-  margin-left: 25%; /* no queda en el centro */
+  margin-left: 25%;
   padding: 3.2rem;
 }
 
