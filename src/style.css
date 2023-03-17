@@ -43,8 +43,23 @@ body {
 
 /* form */
 
+main {
+  padding-top: 6rem;
+}
+
 .div-form {
   background-color: rgba(242, 230, 255, 0.3);
+  display: flex;
+  justify-content: center;
+
+  min-width: 10rem;
+  max-width: 36rem;
+
+  min-height: 10rem;
+  height: 28rem;
+
+  margin-left: 25%; /* no queda en el centro */
+  padding: 3.2rem;
 }
 
 /* quiero que tengan un margen mínimo
@@ -56,26 +71,19 @@ body {
 
 /* no sé como hacer que los dos p estén uno al lado del otro
   y en el centro, y se separen entre ellos un toque */
-  .form-title p {
-  font-size: 2.8rem;
-  display: inline-flex;
-  text-align: center;
+.form-title {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Quiero que aparezca en el medio de la pantalla siempre */
 .signup-form {
-  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  justify-content: center;
   align-items: center;
 }
-
-/* 
-.signup-form input {
-  display: block;
-} */
-
 
 /* footer */
 footer {
