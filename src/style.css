@@ -1,0 +1,86 @@
+/* basic config */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%
+}
+
+p {
+  font-size: 2rem;
+}
+
+/* body */
+body {
+  background: linear-gradient(45deg, #FC466B, #3F5EFB);
+  height: 100vh;
+}
+
+
+/* header */
+
+.header-nav {
+  background-color: rgba(242, 230, 255, 0.3);
+  list-style: none;
+}
+
+.header-nav li {
+  font-size: 2rem
+}
+
+.header-nav__item {
+  display: inline-block;
+}
+
+.header-nav__item a {
+  text-decoration: none;
+  color: black;
+}
+ 
+
+/* form */
+
+.div-form {
+  background-color: rgba(242, 230, 255, 0.3);
+}
+
+/* quiero que tengan un margen mínimo
+  Sign up a la izquierda
+  Sign in a la derecha
+  Y que se separen entre ellos con cierto porcentaje
+  Que mientras más grande es la pantalla más se separan
+  Mientras más chica es la pantalla más se acercan (pero poquito) */
+
+/* no sé como hacer que los dos p estén uno al lado del otro
+  y en el centro, y se separen entre ellos un toque */
+  .form-title p {
+  font-size: 2.8rem;
+  display: inline-flex;
+  text-align: center;
+}
+
+/* Quiero que aparezca en el medio de la pantalla siempre */
+.signup-form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* 
+.signup-form input {
+  display: block;
+} */
+
+
+/* footer */
+footer {
+  background-color: rgba(242, 230, 255, 0.3);
+}
+
+footer p {
+}
