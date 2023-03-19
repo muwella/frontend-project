@@ -47,9 +47,6 @@ main {
   padding-top: 6rem;
 }
 
-.div-form div {
-}
-
 .div-form {
   background-color: rgba(242, 230, 255, 0.3);
   display: flex;
@@ -89,9 +86,24 @@ main {
 }
 
 /* footer */
-footer {
-  background-color: rgba(242, 230, 255, 0.3);
+
+/* que el footer vaya abajo de todo */
+.div-footer {
+  min-height: 100vh; /* con 100vh se crea un scroll,
+        crea un espacio en blanco extra */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
-footer p {
+/* otra opcion: position absolute */
+.div-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer {
+  background-color: rgba(242, 230, 255, 0.3);
 }
