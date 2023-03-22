@@ -6,13 +6,13 @@
 }
 
 html {
-	font-size: 62.5%
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
   font-size: 2rem;
 }
-
 
 /* footer */
 
@@ -24,14 +24,82 @@ p {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
   background-color: rgba(242, 230, 255, 0.3);
+  display: flex;
+  align-items: center;
 }
 
+footer p {
+  padding-left: 1.6rem;
+  color: ivory;
+}
 
 /* body */
 body {
   background: linear-gradient(45deg, #FC466B, #3F5EFB);
   height: 100vh;
+}
+
+
+/* main */
+
+main {
+  padding-top: 6rem;
+}
+
+main button, input {
+  background-color: rgba(242, 230, 255, 0.5);
+  border: none;
+  border-radius: 1.6rem;
+  color: black;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.div-form {
+  background-color: rgba(242, 230, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* min-width: 10rem;
+  max-width: 36rem; */
+
+  width: 50vw;
+
+  height: 60vh;
+
+  /* min-height: 10rem; */
+  /* height: 28rem; */
+
+  margin-left: 25vw;
+}
+
+/* Quiero que aparezca en el medio de la pantalla siempre */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+/* quiero que tengan un margen mínimo
+  Sign up a la izquierda
+  Sign in a la derecha
+  Y que se separen entre ellos con cierto porcentaje
+  Que mientras más grande es la pantalla más se separan
+  Mientras más chica es la pantalla más se acercan (pero poquito) */
+
+.form-title {
+  display: flex;
+  justify-content: space-between; 
+  padding-bottom: 3.2rem;
 }
 
 
@@ -53,49 +121,4 @@ body {
 .header-nav__item a {
   text-decoration: none;
   color: black;
-}
- 
-
-/* form */
-
-main {
-  padding-top: 6rem;
-}
-
-.div-form {
-  background-color: rgba(242, 230, 255, 0.3);
-  display: flex;
-  justify-content: center;
-
-  min-width: 10rem;
-  max-width: 36rem;
-
-  min-height: 10rem;
-  height: 28rem;
-
-  margin-left: 25%;
-  padding: 3.2rem;
-}
-
-/* quiero que tengan un margen mínimo
-  Sign up a la izquierda
-  Sign in a la derecha
-  Y que se separen entre ellos con cierto porcentaje
-  Que mientras más grande es la pantalla más se separan
-  Mientras más chica es la pantalla más se acercan (pero poquito) */
-
-/* no sé como hacer que los dos p estén uno al lado del otro
-  y en el centro, y se separen entre ellos un toque */
-.form-title {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-/* Quiero que aparezca en el medio de la pantalla siempre */
-.signup-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
 }
